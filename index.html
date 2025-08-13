@@ -21,7 +21,7 @@
         
         :root {
             --primary: #6366f1;
-            --secondary: #10b981;
+            --secondary: #3b82f6;  /* Mavi renk */
             --warning: #f59e0b;
             --dark: #1f2937;
             --light: #f3f4f6;
@@ -177,7 +177,7 @@
             transition: all 0.3s;
         }
         
-        .letter-box.green {
+        .letter-box.blue {
             background: var(--secondary);
             border-color: var(--secondary);
             animation: flip 0.5s ease;
@@ -241,45 +241,6 @@
         .feature-card p {
             color: #6b7280;
             line-height: 1.8;
-        }
-        
-        /* Screenshots */
-        .screenshots {
-            padding: 80px 0;
-            background: var(--light);
-        }
-        
-        .screenshots h2 {
-            text-align: center;
-            font-size: 2.5rem;
-            margin-bottom: 50px;
-            color: var(--dark);
-        }
-        
-        .screenshot-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .screenshot {
-            width: 250px;
-            height: 500px;
-            background: white;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.15);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 18px;
-            color: #9ca3af;
-            transition: all 0.3s;
-        }
-        
-        .screenshot:hover {
-            transform: scale(1.05);
-            box-shadow: 0 30px 80px rgba(0,0,0,0.2);
         }
         
         /* Footer */
@@ -362,7 +323,7 @@
                 font-size: 24px;
             }
             
-            .features h2, .screenshots h2 {
+            .features h2 {
                 font-size: 2rem;
             }
         }
@@ -381,7 +342,6 @@
             <ul class="nav-links">
                 <li><a href="#home">Ana Sayfa</a></li>
                 <li><a href="#features">Özellikler</a></li>
-                <li><a href="#screenshots">Ekran Görüntüleri</a></li>
                 <li><a href="#contact">İletişim</a></li>
             </ul>
         </nav>
@@ -391,7 +351,7 @@
     <section id="home" class="hero">
         <div class="container">
             <h1>Kelime Tahmin Oyunu</h1>
-            <p>Türkçe kelimeleri tahmin et, beyninni geliştir, eğlenirken öğren!</p>
+            <p>Türkçe kelimeleri tahmin et, beynini geliştir, eğlenirken öğren!</p>
             <div class="download-buttons">
                 <a href="#" class="btn btn-primary">
                     <span>🍎</span> App Store
@@ -408,14 +368,14 @@
         <div class="container">
             <h2 style="text-align: center; margin-bottom: 30px; font-size: 2rem;">Nasıl Oynanır?</h2>
             <div class="demo-grid">
-                <div class="letter-box green">K</div>
+                <div class="letter-box blue">K</div>
                 <div class="letter-box yellow">E</div>
                 <div class="letter-box gray">L</div>
                 <div class="letter-box yellow">İ</div>
-                <div class="letter-box green">M</div>
+                <div class="letter-box blue">M</div>
             </div>
             <p style="text-align: center; color: #6b7280; max-width: 600px; margin: 0 auto;">
-                <span style="color: var(--secondary); font-weight: bold;">Yeşil:</span> Doğru harf, doğru yer &nbsp;&nbsp;
+                <span style="color: var(--secondary); font-weight: bold;">Mavi:</span> Doğru harf, doğru yer &nbsp;&nbsp;
                 <span style="color: var(--warning); font-weight: bold;">Sarı:</span> Doğru harf, yanlış yer &nbsp;&nbsp;
                 <span style="color: #6b7280; font-weight: bold;">Gri:</span> Kelimede yok
             </p>
@@ -461,18 +421,6 @@
         </div>
     </section>
 
-    <!-- Screenshots -->
-    <section id="screenshots" class="screenshots">
-        <div class="container">
-            <h2>Ekran Görüntüleri</h2>
-            <div class="screenshot-container">
-                <div class="screenshot">Ana Ekran</div>
-                <div class="screenshot">Oyun Ekranı</div>
-                <div class="screenshot">Sonuç Ekranı</div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer id="contact">
         <div class="container">
@@ -481,7 +429,7 @@
                 <a href="#">Kullanım Koşulları</a>
                 <a href="mailto:destek@lingo.com">İletişim</a>
             </div>
-            <p>&copy; 2024 Lingo. Tüm hakları saklıdır.</p>
+            <p>&copy; 2025 Lingo. Tüm hakları saklıdır.</p>
         </div>
     </footer>
 
@@ -525,9 +473,9 @@
         let demoInterval;
         const letterBoxes = document.querySelectorAll('.letter-box');
         const words = [
-            [{letter: 'K', class: 'green'}, {letter: 'E', class: 'yellow'}, {letter: 'L', class: 'gray'}, {letter: 'İ', class: 'yellow'}, {letter: 'M', class: 'green'}],
-            [{letter: 'O', class: 'gray'}, {letter: 'Y', class: 'green'}, {letter: 'U', class: 'green'}, {letter: 'N', class: 'green'}, {letter: 'U', class: 'gray'}],
-            [{letter: 'L', class: 'green'}, {letter: 'İ', class: 'green'}, {letter: 'N', class: 'green'}, {letter: 'G', class: 'green'}, {letter: 'O', class: 'green'}]
+            [{letter: 'K', class: 'blue'}, {letter: 'E', class: 'yellow'}, {letter: 'L', class: 'gray'}, {letter: 'İ', class: 'yellow'}, {letter: 'M', class: 'blue'}],
+            [{letter: 'O', class: 'gray'}, {letter: 'Y', class: 'blue'}, {letter: 'U', class: 'blue'}, {letter: 'N', class: 'blue'}, {letter: 'U', class: 'gray'}],
+            [{letter: 'L', class: 'blue'}, {letter: 'İ', class: 'blue'}, {letter: 'N', class: 'blue'}, {letter: 'G', class: 'blue'}, {letter: 'O', class: 'blue'}]
         ];
         let currentWordIndex = 0;
 
