@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["CS883PSQ64.com.toyzeynep.wordlingo"],
+        "components": [
+          { "/": "/c/*", "comment": "Arkadaşa meydan okuma linkleri" }
+        ]
+      }
+    ]
+  }
+}
