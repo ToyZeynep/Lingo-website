@@ -1,0 +1,14 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rummuscan.lingoapp",
+      "sha256_cert_fingerprints": [
+        "0A:4C:2B:A9:DC:03:B3:9F:19:53:36:60:2B:61:DE:35:72:16:AE:B0:58:B7:6E:F2:5D:CD:06:17:A3:69:5D:85",
+        "16:13:AD:E1:B3:4D:4F:F2:61:E6:32:49:D4:CD:39:0F:B4:D4:B8:80:24:F2:41:F4:1E:43:3B:0D:7C:53:3F:E2",
+        "55:91:7B:52:16:7F:E9:E9:FA:BE:0F:8D:9F:ED:FC:BF:6F:1D:74:C1:5C:0D:BB:E3:A3:F8:BF:FD:AF:CC:03:E5"
+      ]
+    }
+  }
+]
